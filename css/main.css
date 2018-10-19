@@ -97,36 +97,134 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Start utility classes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
+.flex {
+    display: flex;
+}
+.tablette, .desktop {
+    display: none;
+}
+.puce {
+    text-decoration: none;
+    color: black;
+}
+.color_container {
+    background-color: black;
+    color: white;
+}
+.tCenter {
+    text-align: center;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End utility classes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Start commons rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
+.margin_auto {
+    margin: auto;
+}
+.margin_1em {
+    margin: 1em;
+}
+.margin_2em {
+    margin: 2em;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End commons rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Start header rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#section_header {
 
-@media screen and (min-width: 500px) {
-    
+}
+@media screen and (min-width: 670px) {
+    .mobileOnly {
+        display: none;
+    }
+    .tablette {
+        display: flex;
+    }
 }
 @media screen and (min-width: 1200px) {
-    
+    .tablette {
+        display: flex;
+    }
+    .desktop {
+        display: flex;
+    }
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End header rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Start home rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Start nav rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#mobileNav {
+    overflow: hidden;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
 
-@media screen and (min-width: 500px) {
-    
+#mobileNav #myLinks {
+    display: none;
+}
+
+#mobileNav a {
+    padding: 10px;
+    font-size: 15px;
+}
+
+#mobileNav a #iconNav {
+    position: absolute; 
+    right: 0;
+    top: 0;
+}
+
+#mobileNav a #iconNav, #mobileNav a {
+    display: block;
+}
+
+@media screen and (min-width: 670px) {
+    .mobileOnly {
+        display: none;
+    }
+    .tablette {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav div a {
+        margin: 0.5em;
+    }
 }
 @media screen and (min-width: 1200px) {
-    
+    .tablette {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+    }
 }
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End nav rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start homr rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End home rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start presentation rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End presentation rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start projets rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End projets rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start contact rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End contact rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Start footer rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-@media screen and (min-width: 500px) {
-    
+@media screen and (min-width: 670px) {
+    .mobileOnly {
+        display: none;
+    }
+    .tablette {
+        display: flex;
+    }
 }
 @media screen and (min-width: 1200px) {
-    
+    .tablette {
+        display: flex;
+    }
+    .desktop {
+        display: flex;
+    }
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End footer rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* ==========================================================================
