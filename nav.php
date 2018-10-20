@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="fr">
 
@@ -19,12 +18,12 @@
 
 <body>
 <!--The navigation bar above the header for tablette and desktop-->
-<nav class="tablette desktop color_container">
+<nav id="nav_tablette" class="tablette desktop color_container">
       <div class="margin_2em">
             <i class="fas fa-laptop-code fa-5x"></i>
       </div>
       <div class="margin_2em">
-            <a class="puce color_container" href="presentation.php">Accueil</a>
+            <a class="puce color_container" href="index.html">Accueil</a>
             <a class="puce color_container" href="presentation.php">Mon parcours</a>
             <a class="puce color_container" href="projets.php">Mes créations</a>
             <a class="puce color_container" href="contact.php">Contact</a>
@@ -38,7 +37,7 @@
       <div id="myLinks">
             <div class="margin_1em">
                   <a class="puce color_container" href="#introduction">A propos</a>
-                  <a class="puce color_container"href="#career">Mon parcours</a>
+                  <a class="puce color_container" href="#career">Mon parcours</a>
                   <a class="puce color_container" href="#creations">Mes créations</a>
                   <a class="puce color_container" href="#contact">Contact</a>
             </div>
