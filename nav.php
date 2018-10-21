@@ -25,7 +25,6 @@
       <div class="margin_2em">
             <a class="puce color_container" href="index.html">Accueil</a>
             <a class="puce color_container" href="presentation.php">Mon parcours</a>
-            <a class="puce color_container" href="projets.php">Mes créations</a>
             <a class="puce color_container" href="contact.php">Contact</a>
       </div>
 </nav>
@@ -36,10 +35,9 @@
       </div>
       <div id="myLinks">
             <div class="margin_1em">
-                  <a class="puce color_container" href="#introduction">A propos</a>
-                  <a class="puce color_container" href="#career">Mon parcours</a>
-                  <a class="puce color_container" href="#creations">Mes créations</a>
-                  <a class="puce color_container" href="#contact">Contact</a>
+                  <a class="puce color_container" href="index.html">A propos</a>
+                  <a class="puce color_container" href="presentation.php">Mon parcours</a>
+                  <a class="puce color_container" href="contact.php">Contact</a>
             </div>
       </div>
       <a href="javascript:void(0);" id="iconNav" class="color_container" onclick="myFunction()">
