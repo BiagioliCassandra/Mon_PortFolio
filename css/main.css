@@ -122,6 +122,9 @@ textarea {
 .tCenter {
     text-align: center;
 }
+.color_text {
+    color: rgb(250, 96, 7);
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End utility classes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Start commons rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* body {
@@ -196,7 +199,7 @@ h1 {
 
 .div_3img {
     width: 100%;
-    background-color: red;
+    justify-content: center;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End home rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start presentation rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -233,7 +236,7 @@ h1 {
         flex-wrap: nowrap;
     }
     .img_projects {
-        width: 50vh;
+        width: 30vh;
     }
 }
 
