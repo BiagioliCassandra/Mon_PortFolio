@@ -22,9 +22,26 @@
                   Entre deux séances de développement j'aime beaucoup <span class="color_text">lire</span>, regarder des <span class="color_text">animes</span> et jouer à des <span class="color_text">jeux vidéos</span><br><br>
             </p>
       </section>
-      <section>
-            <h3 class="tCenter margin_2em">Mon parcours</h3>
-      </section>
+      <div class="timeline">
+            <div class="container left">
+                  <section class="content">
+                        <h2>De septembre 2018 à mars 2019</h2>
+                        <p>Formation Développeuse Web chez ADEP et Simplon à Roubaix.</p>
+                  </section>
+            </div>
+            <div class="container right">
+                  <section class="content">
+                        <h2>De novembre 2017 à août 2018</h2>
+                        <p>Employée polyvalente chez Maison Dépôt à Neuville en Ferrain.</p>
+                  </section>
+            </div>
+            <div class="container left">
+                  <section class="content">
+                        <h2>D'Avril 2015 à septembre 2017</h2>
+                        <p>Hôtesse de caisse chez Supermarché Casino à Remiremont.</p>
+                  </section>
+            </div>
+      </div> 
 </main>
 <!--~~~~~~~~~~~~~~~~~~~~
       End main

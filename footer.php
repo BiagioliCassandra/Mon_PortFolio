@@ -2,9 +2,17 @@
       Stard footer
 ~~~~~~~~~~~~~~~~~~~~~-->
 <footer class="color_container">
-      <div class="tCenter">
-            <p class="margin_2em">Biagioli Cassandra ©2018</p>
-            <a class="puce color_container" href="">Mentions légales</a>
+      <section>
+            <h4 class="tCenter">Mes liens</h4>
+            <div id="footer_icons" class="flex">
+                  <a class="color_container" href="https://github.com/BiagioliCassandra"><i class="fab fa-github fa-2x"></i></a>
+                  <a class="color_container" href="https://www.linkedin.com/in/cassandra-biagioli-23a704a9/"><i class="fab fa-linkedin fa-2x"></i></a>
+                  <a class="color_container" href="https://twitter.com/BiagioliCass"><i class="fab fa-twitter fa-2x"></i></a>
+                  <a class="color_container"><i class="fas fa-code fa-2x"></i></a>
+            </div>
+      </section>
+      <div>
+            <p class="tCenter margin_2em">Biagioli Cassandra ©2018 \<a class="puce color_container" href="">\ Mentions légales</a></p>  
       </div>
 </footer>
 <!--~~~~~~~~~~~~~~~~~~~~
