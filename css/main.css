@@ -196,8 +196,7 @@ h1 {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End nav rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start home rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .img_projects {
-    width: 90%;
-    background-color: blue;
+    width: 95%;
 }
 
 .div_3img {
@@ -349,7 +348,7 @@ footer {
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End footer rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Start media queries rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 700px) {
     .mobileOnly {
         display: none;
     }
@@ -370,10 +369,9 @@ footer {
         flex-wrap: nowrap;
     }
     .img_projects {
-        width: 30vh;
+        width: 70vh;
     }
 }
-
 @media screen and (min-width: 1200px) {
     .tablette {
         display: none;
@@ -385,7 +383,7 @@ footer {
         width: 20%;
     }
     .img_projects {
-        width: 40vh;
+        width: 60vh;
     }
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End media queries rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
