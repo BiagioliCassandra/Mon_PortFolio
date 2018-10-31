@@ -111,33 +111,43 @@ textarea {
 
 .puce {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .color_container {
-    background-color: black;
+    background-color: #2e2d2f;
     color: white;
+}
+
+.color_containerLight {
+    background-color: #a28497;
 }
 
 .tCenter {
     text-align: center;
 }
+
 .color_text {
-    color: rgb(250, 96, 7);
+    color: #a28497;
+}
+
+.policeText_links, h3 {
+    font-family: 'Hind Siliguri', sans-serif;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End utility classes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Start commons rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 * {
     box-sizing: border-box;
-}
-/* body {
-
+    font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-
-} */
-
+h1, h2, h4, h5, h6 {
+    font-family: 'Dancing Script', cursive;
+}
+h3 {
+    font-size: 2em;
+    margin: 2em 0;
+}
 header, footer {
     width: 100%;
 }
@@ -152,6 +162,9 @@ header, footer {
 
 .margin_2em {
     margin: 2em;
+}
+.marginLeft_2em {
+    margin-left: 2em;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End commons rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Start header rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -195,26 +208,81 @@ h1 {
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End nav rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start home rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.img_projects {
-    width: 95%;
-}
-
 .div_3img {
     width: 100%;
     justify-content: center;
 }
+#homeSection {
+    background-image : url("../img/geometric.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+
+#homeColorContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #a28497;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#homeSection h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+
+.articleContainer {
+    position: relative;
+    width: 90%;
+    height: 250px;
+    margin-bottom: 3em;
+}
+
+.articleContainer img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.buttonContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End home rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start presentation rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/  
+#container_avatar {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#imgAvatar {
+    width: 40%;
+}
 /* The actual timeline (the vertical ruler) */
 .timeline {
     background-color: #474e5d;
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -223,18 +291,18 @@ h1 {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .container {
+}
+
+/* Container around content */
+.container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
+}
+
+/* The circles on the timeline */
+.container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -245,20 +313,20 @@ h1 {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
+}
+
+/* Place the container to the left */
+.left {
     left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
+}
+
+/* Place the container to the right */
+.right {
     left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -269,10 +337,10 @@ h1 {
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -283,66 +351,68 @@ h1 {
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
     left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
+}
+
+/* The actual content */
+.content {
     padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-    .timeline::after {
-      left: 31px;
-    }
-  
-  /* Full-width containers */
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-  /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-  
-  /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-      left: 15px;
-    }
-  
-  /* Make all right containers behave like the left ones */
-    .right {
-      left: 0%;
-    }
-  }
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End presentation rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start projets rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+}
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End projets rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+
+/* Full-width containers */
+    .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+
+/* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+
+/* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+
+/* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End presentation rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start contact rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#contactLinks {
-    border: solid black 1px;
+.iconeTelephone {
+    margin-bottom: 3em;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End contact rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Start footer rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 footer {
-    overflow: hidden;
+    padding-top: 2em;
 }
+
+footer p {
+    margin: 2em 0 0 0;
+}
+
 #footer_icons {
     justify-content: space-around;
 }
@@ -371,6 +441,11 @@ footer {
     .img_projects {
         width: 70vh;
     }
+    .articleContainer {
+        position: relative;
+        width: 45%;
+        height: 220px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .tablette {
@@ -384,6 +459,17 @@ footer {
     }
     .img_projects {
         width: 60vh;
+    }
+    .articleContainer {
+        position: relative;
+        width: 25%;
+        height: 150px;
+    }
+    #container_avatar {
+        flex-direction: row;
+    }
+    #imgAvatar {
+        width: 25%;
     }
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End media queries rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
