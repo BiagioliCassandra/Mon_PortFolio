@@ -1,14 +1,16 @@
 <?php
+//I add the files I need
 include("Template/nav.php");
 include("Template/header.php");
 ?>
 <!--~~~~~~~~~~~~~~~~~~~~
       Stard main
 ~~~~~~~~~~~~~~~~~~~~~-->
+<!--the form of the contact page-->
 <form class="mx-auto w-50 my-5" method="POST" action="contactTreatment.php">
       <div class="form-group">
             <label for="contactName">Nom : </label>
-            <input type="text" class="form-control" name="contact_name" id="contactName" placeholder="nom">
+            <input type="text" class="form-control" name="contact_name" id="contactName" placeholder="nom" required="required">
       </div>
       <div class="form-group">
             <label for="contactFirstname">Prénom : </label>
@@ -32,5 +34,6 @@ include("Template/header.php");
       End main
 ~~~~~~~~~~~~~~~~~~~~~-->
 <?php
+//I add the files I need
 include("Template/footer.php");
 ?>

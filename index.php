@@ -1,4 +1,5 @@
 <?php
+//I add the files I need
 include("Template/nav.php");
 include("Template/header.php");
 ?>
@@ -39,7 +40,7 @@ include("Template/header.php");
                                     </div>
                                     <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                                          <a class="puce" href="https://github.com/BiagioliCassandra/Patisserie"><button type="button" class="btn color_containerLight">GitHub</button></a>
+                                          <a class="puce" href="https://github.com/BiagioliCassandra/Patisserie"><button type="button" class="btn text-white color_containerLight">GitHub</button></a>
                                     </div>
                               </div>
                         </div>
@@ -73,7 +74,7 @@ include("Template/header.php");
                                     </div>
                                     <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                                          <a class="puce" href="https://github.com/BiagioliCassandra/twitter"><button type="button" class="btn color_containerLight">GitHub</button></a>
+                                          <a class="puce" href="https://github.com/BiagioliCassandra/twitter"><button type="button" class="btn text-white color_containerLight">GitHub</button></a>
                                     </div>
                               </div>
                         </div>
@@ -101,7 +102,7 @@ include("Template/header.php");
                                     </div>
                                     <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                                          <a class="puce" href="https://github.com/BiagioliCassandra/ProjetAdep"><button type="button" class="btn color_containerLight">GitHub</button></a>
+                                          <a class="puce" href="https://github.com/BiagioliCassandra/ProjetAdep"><button type="button" class="btn text-white color_containerLight">GitHub</button></a>
                                     </div>
                               </div>
                         </div>
@@ -135,5 +136,6 @@ include("Template/header.php");
       End main
 ~~~~~~~~~~~~~~~~~~~~~-->
 <?php
+//I add the files I need
 include("Template/footer.php");
 ?>
