@@ -1,16 +1,25 @@
+<?php
+//I add the files I need
+require("Model/db.php");
+require("Model/userManager.php");
+//I store the data of the user table in a variable
+$user = getUser($db);
+?>
+
 <!doctype html>
 <html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>PortFolio Biagioli Cassandra</title>
+  <title>PortFolio <?php echo $user["Nom"] . " " . $user["Prenom"]; ?></title>
   <meta name="description" content="Mon PortFolio">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -19,13 +28,13 @@
 <body>
 <!--The navigation bar above the header for tablette and desktop-->
 <nav id="nav_tablette" class="tablette desktop color_container">
-      <div class="margin_2em">
-            <i class="fas fa-laptop-code fa-5x"></i>
+      <div>
+            <h1 class="tCenter marginLeft_2em"><?php echo $user["Nom"] . " " . $user["Prenom"]; ?></h1>
       </div>
-      <div class="margin_2em">
-            <a class="puce color_container" href="index.html">Accueil</a>
-            <a class="puce color_container" href="presentation.php">Mon parcours</a>
-            <a class="puce color_container" href="contact.php">Contact</a>
+      <div>
+            <a class="policeText_links puce color_container" href="index.php">Accueil</a>
+            <a class="policeText_links puce color_container" href="presentation.php">Mon parcours</a>
+            <a class="policeText_links puce color_container" href="contact.php">Contact</a>
       </div>
 </nav>
 <!--The navigation bar above the header for mobile-->
@@ -35,9 +44,9 @@
       </div>
       <div id="myLinks">
             <div class="margin_1em">
-                  <a class="puce color_container" href="index.html">A propos</a>
-                  <a class="puce color_container" href="presentation.php">Mon parcours</a>
-                  <a class="puce color_container" href="contact.php">Contact</a>
+                  <a class="policeText_links puce color_container" href="index.php">Accueil</a>
+                  <a class="policeText_links puce color_container" href="presentation.php">Mon parcours</a>
+                  <a class="policeText_links puce color_container" href="contact.php">Contact</a>
             </div>
       </div>
       <a href="javascript:void(0);" id="iconNav" class="color_container" onclick="myFunction()">
