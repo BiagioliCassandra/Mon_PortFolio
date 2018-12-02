@@ -2,6 +2,11 @@
 //I add the files I need
 include("Template/nav.php");
 include("Template/header.php");
+
+if(isset($_GET["message"])) {
+    $message = htmlspecialchars($_GET["message"]);
+    echo "<div class='alert alert-danger w-50 mx-auto'>" . $message . "</div>";
+}
 ?>
 <!--The button of the admin page-->
 <section class="d-flex flex-column margin_2em">
@@ -11,7 +16,7 @@ include("Template/header.php");
         <a href="project.php" class="btn text-white color_containerLight">Projets</a>
         <a href="biography.php" class="btn text-white color_containerLight">Biographie</a>
     </div>
-    <a class="text-center" href="logout.php"><i class="fas fa-sign-out-alt"></i></a>
+    <a class="text-center color_text" href="logout.php"><i class="fas fa-sign-out-alt fa-2x"></i></a>
 </section>
 <?php
 //I add the files I need
