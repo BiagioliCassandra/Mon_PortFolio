@@ -1,4 +1,10 @@
 <?php 
+function getImages($db) {
+    $request = $db->query("SELECT * FROM Images");
+    $result = $request->fetchall(PDO::FETCH_ASSOC);
+    $request->CloseCursor();
+    return $result;
+}
 //A function that adds a project to the database
 function addImage($db, $image, $path) {
     $request = $db->prepare("INSERT INTO Images(Name, Path) VALUES(?, ?)");

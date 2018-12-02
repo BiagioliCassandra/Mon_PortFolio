@@ -1,12 +1,24 @@
 <?php 
-function getProject() {
-    
+function getProjects($db) {
+    $request = $db->query("SELECT * FROM Projects");
+    $result = $request->fetchall(PDO::FETCH_ASSOC);
+    $request->CloseCursor();
+    return $result;
 }
+
+function getProject($db, $id) {
+    $request = $db->prepare("SELECT * FROM Projects WHERE id = ?");
+    $result = $request->execute([$id]);
+    $request->CloseCursor();
+    return $result;
+}
+
 function addProject($db, $project, $lastID) {
-    $request = $db->prepare("INSERT INTO Projects(Title, Content, Image_id) VALUES(:Title, :Content, :Image_id)");
+    $request = $db->prepare("INSERT INTO Projects(Title, Content, Github_link, Image_id) VALUES(:Title, :Content, :Github_link, :Image_id)");
     $result = $request->execute([
         "Title" => $project["Title"],
         "Content" => $project["Content"],
+        "Github_link" => $project["Github"],
         "Image_id" => $lastID
     ]);
     $request->CloseCursor();
@@ -14,10 +26,11 @@ function addProject($db, $project, $lastID) {
 }
 
 function updateProject($db, $project) {
-    $request = $db->prepare("UPDATE Projects SET Title = :Title, Content = :Content");
+    $request = $db->prepare("UPDATE Projects SET Title = :Title, Content = :Content, Github_link = :Github_link");
     $result = $request->execute([
         "Title" => $project["Title"],
-        "Content" => $project["Content"]
+        "Content" => $project["Content"],
+        "Github_link" => $project["Github"],
     ]);
     $request->CloseCursor();
     return $result;

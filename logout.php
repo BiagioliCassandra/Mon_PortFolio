@@ -6,6 +6,6 @@ session_unset();
 //We destroy it
 session_destroy();
 // We redirect the user to the login page
-header("Location: index.php?success=Vous avez été déconnecté, à bientôt ^^");
+header("Location: index.php?message=Vous avez été déconnecté, à bientôt ^^");
 exit;
 ?>

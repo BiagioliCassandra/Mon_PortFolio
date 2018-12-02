@@ -2,6 +2,11 @@
 //I add the files I need
 include("Template/nav.php");
 include("Template/header.php");
+
+if(isset($_GET["message"])) {
+  $message = htmlspecialchars($_GET["message"]);
+  echo "<div class='alert alert-danger w-50 mx-auto'>" . $message . "</div>";
+}
 ?>
 <!--The form for login ton admin page-->
 <form class="w-50 mx-auto my-5" method="POST" action="indexAdminTreatment.php">
