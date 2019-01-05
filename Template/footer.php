@@ -16,7 +16,7 @@ $annee = date("Y");
             </div>
       </div>
       <div>
-            <p class="tCenter"><?php echo $user["Nom"] . " " . $user["Prenom"] . " " . "©" . $annee;?> \<a class="puce color_container" href="">\ Mentions légales</a></p>  
+            <p class="tCenter"><?php echo $user["name"] . " " . $user["firstname"] . " " . "©" . $annee;?> \<a class="puce color_container" href="">\ Mentions légales</a></p>  
       </div>
 </footer>
 <!--~~~~~~~~~~~~~~~~~~~~

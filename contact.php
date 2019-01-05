@@ -33,7 +33,7 @@ if(isset($_GET["message"])) {
             </div>
             <div class="form-group">
                   <label for="contactMessage">Votre message</label>
-                  <textarea class="form-control" name="contact_message" id="contactMessage" rows="3" placeholder="Vous pouvez me laisser un message si vous le souhaiter!"></textarea>
+                  <textarea class="form-control" name="contact_message" id="contactMessage" rows="3" placeholder="Vous pouvez me laisser un message si vous le souhaitez!"></textarea>
             </div>
             <button type="submit" name="button" value="Envoyer" class="btn btn-primary">Envoyer</button>
       </form>
