@@ -208,10 +208,6 @@ h1 {
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~End nav rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start home rules~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.div_3img {
-    width: 100%;
-    justify-content: center;
-}
 #homeSection {
     background-image : url("../img/geometric.jpg");
     background-position: center;
@@ -236,7 +232,6 @@ h1 {
     margin: 0;
     font-size: 3em;
 }
-
 
 .articleContainer {
     position: relative;

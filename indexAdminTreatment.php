@@ -9,7 +9,7 @@ if(isset($_POST) || !empty($_POST)) {
     foreach ($_POST as $key => $value) {
         $_POST[$key] = htmlspecialchars($value);
     }
-    if($user["Nom"] === $_POST["admin_nom"] && $_POST["admin_password"] === $user["Password"]) {
+    if($user["name"] === $_POST["admin_nom"] && $_POST["admin_password"] === $user["password"]) {
         session_start();
         $_SESSION["user"] = $user;
         header("Location: admin.php?message=Connexion réussie!");

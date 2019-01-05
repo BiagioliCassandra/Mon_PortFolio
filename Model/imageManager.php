@@ -7,7 +7,7 @@ function getImages($db) {
 }
 //A function that adds a project to the database
 function addImage($db, $image, $path) {
-    $request = $db->prepare("INSERT INTO Images(Name, Path) VALUES(?, ?)");
+    $request = $db->prepare("INSERT INTO Images(name, path) VALUES(?, ?)");
     $result = $request->execute([$image["name"], $path]);
     $request->CloseCursor();
     return $result;

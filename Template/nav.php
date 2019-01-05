@@ -12,7 +12,7 @@ $user = getUser($db);
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>PortFolio <?php echo $user["Nom"] . " " . $user["Prenom"]; ?></title>
+  <title>PortFolio <?php echo $user["name"] . " " . $user["firstname"]; ?></title>
   <meta name="description" content="Mon PortFolio">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -29,7 +29,7 @@ $user = getUser($db);
 <!--The navigation bar above the header for tablette and desktop-->
 <nav id="nav_tablette" class="tablette desktop color_container">
       <div>
-            <h1 class="tCenter marginLeft_2em"><?php echo $user["Nom"] . " " . $user["Prenom"]; ?></h1>
+            <h1 class="tCenter marginLeft_2em"><?php echo $user["name"] . " " . $user["firstname"]; ?></h1>
       </div>
       <div>
             <a class="policeText_links puce color_container" href="index.php">Accueil</a>
