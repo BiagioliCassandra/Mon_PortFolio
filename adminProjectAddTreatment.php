@@ -27,4 +27,6 @@ else{
     header("Location: admin.php?message=Vous devez remplir le formulaire d'ajout!");
     exit;    
 }
+
+
 ?>

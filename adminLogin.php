@@ -9,7 +9,7 @@ if(isset($_GET["message"])) {
 }
 ?>
 <!--The form for login ton admin page-->
-<form class="w-50 mx-auto my-5" method="POST" action="indexAdminTreatment.php">
+<form class="w-50 mx-auto my-5" method="POST" action="adminLoginTreatment.php">
   <div class="form-group">
     <label for="adminNom">Nom</label>
     <input type="text" class="form-control" name="admin_nom" id="adminNom" placeholder="Nom">

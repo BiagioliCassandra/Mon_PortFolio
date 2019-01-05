@@ -7,8 +7,9 @@ function getProjects($db) {
 }
 
 function getProject($db, $id) {
-    $request = $db->prepare("SELECT p.*, i.path FROM Projects AS p INNER JOIN Images AS i WHERE p.id = ?");
-    $result = $request->execute([$id]);
+    $request = $db->prepare("SELECT * FROM Projects WHERE id = ?");
+    $request->execute([$id]);
+    $result = $request->fetch(PDO::FETCH_ASSOC);
     $request->CloseCursor();
     return $result;
 }
