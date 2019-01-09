@@ -2,6 +2,9 @@
 require("Model/db.php");
 require("Model/projectManager.php");
 require("Model/imageManager.php");
+require("Service/sessionManager.php");
+restrictToUser();
+
 $id = htmlspecialchars($_GET["id"]);
 $project = getProject($db, $id);
 $imageID = $project["image_id"];

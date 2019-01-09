@@ -5,6 +5,9 @@ include("Template/nav.php");
 include("Template/header.php");
 require("Model/db.php");
 require("Model/projectManager.php");
+require("Service/sessionManager.php");
+restrictToUser();
+
 $projects = getProjects($db);
 if(isset($_GET["message"])) {
     $message = htmlspecialchars($_GET["message"]);

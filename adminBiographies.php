@@ -4,6 +4,8 @@ include("Template/nav.php");
 include("Template/header.php");
 require("Model/db.php");
 require("Model/biographyManager.php");
+require("Service/sessionManager.php");
+restrictToUser();
 $biographies = getBiographies($db);
 
 if(isset($_GET["message"])) {

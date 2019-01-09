@@ -4,7 +4,8 @@ include("Template/nav.php");
 include("Template/header.php");
 require("Model/db.php");
 require("Model/biographyManager.php");
-session_start();
+require("Service/sessionManager.php");
+restrictToUser();
 
 if(isset($_GET["message"])) {    
       $message = htmlspecialchars($_GET["message"]);
