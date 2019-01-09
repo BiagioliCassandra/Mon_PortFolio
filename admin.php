@@ -14,7 +14,7 @@ if(isset($_GET["message"])) {
     <!--3 button for add, modify and delete the article-->
     <div class="btn-group d-block mx-auto margin_2em" role="group" aria-label="Basic example">
         <a href="adminProjects.php" class="btn text-white color_containerLight">Projets</a>
-        <a href="adminBiography.php" class="btn text-white color_containerLight">Biographie</a>
+        <a href="adminBiographies.php" class="btn text-white color_containerLight">Biographie</a>
     </div>
     <a class="text-center color_text margin_1em" href="adminLogout.php"><i class="fas fa-sign-out-alt fa-2x"></i></a>
 </section>

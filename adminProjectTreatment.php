@@ -14,6 +14,7 @@ if($_GET["action"] === "remove") {
 }
 
 if($_GET["action"] === "update") {
+
     //I'm checking that $_FILES is not empty
     if(!empty($_FILES)) {
         //if so I save the true path of the image in a variable
