@@ -2,6 +2,9 @@
 //I add the files I need
 require("Model/db.php");
 require("Model/userManager.php");
+require("Service/sessionManager.php");
+restrictToUser();
+
 $user = getUser($db);
 //I check if the form is not empty or if it is not null
 if(isset($_POST) || !empty($_POST)) {
@@ -10,8 +13,7 @@ if(isset($_POST) || !empty($_POST)) {
         $_POST[$key] = htmlspecialchars($value);
     }
     if($user["name"] === $_POST["admin_nom"] && $_POST["admin_password"] === $user["password"]) {
-        session_start();
-        $_SESSION["user"] = $user;
+        initializeUserSession($user);
         header("Location: admin.php?message=Connexion réussie!");
         exit;
     }
