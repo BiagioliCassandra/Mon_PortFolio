@@ -25,7 +25,7 @@ function addProject($db, $project, $lastID) {
     $request->CloseCursor();
     return $result;
 }
-
+//Problème ici, souci avec le nom de l'image a enregistrer
 function updateProject($db, $project, $id) {
     $request = $db->prepare("UPDATE Projects SET title = :title, content = :content, github_link = :github_link WHERE id = :id");
     $result = $request->execute([

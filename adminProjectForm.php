@@ -6,11 +6,12 @@ require("Model/db.php");
 require("Model/projectManager.php");
 require("Model/imageManager.php");
 session_start();
-$id = htmlspecialchars($_GET["id"]);
-$project = getProject($db, $id);
-$imageID = $project["image_id"];
-$imageName = getImageName($db, $imageID);
-var_dump($imageName);
+if(isset($_GET["id"])) {
+      $id = htmlspecialchars($_GET["id"]);
+      $project = getProject($db, $id);
+      $imageID = $project["image_id"];
+      $imageName = getImageName($db, $imageID);
+}
 
 if(isset($_GET["message"])) {    
       $message = htmlspecialchars($_GET["message"]);
