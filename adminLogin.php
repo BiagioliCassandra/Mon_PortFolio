@@ -18,7 +18,7 @@ if(isset($_GET["message"])) {
     <label for="adminPassword">Password</label>
     <input type="password" class="form-control" name="admin_password" id="adminPassword" placeholder="Password">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Connexion</button>
 </form>
 <?php
 //I add the files I need

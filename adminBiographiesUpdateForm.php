@@ -5,7 +5,6 @@ include("Template/header.php");
 require("Model/db.php");
 require("Model/biographyManager.php");
 require("Service/sessionManager.php");
-restrictToUser();
 
 $id = htmlspecialchars($_GET["id"]);
 $biography = getBiography($db, $id);
