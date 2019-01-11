@@ -2,7 +2,6 @@
 require("Model/db.php");
 require("Model/biographyManager.php");
 require("Service/sessionManager.php");
-restrictToUser();
 
 if($_GET["action"] == "add") {
         //I add the project in my database

@@ -3,7 +3,6 @@
 require("Model/db.php");
 require("Model/userManager.php");
 require("Service/sessionManager.php");
-restrictToUser();
 
 $user = getUser($db);
 //I check if the form is not empty or if it is not null
